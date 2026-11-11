@@ -7,7 +7,7 @@
     { href: "about.html",    label: "학회 소개",       key: "about" },
     { href: "activities.html", label: "학술 활동",     key: "activities" },
     { href: "bylaws.html",   label: "회칙",            key: "bylaws" },
-    { href: "archive.html",  label: "자료 아카이빙",    key: "archive" },
+    { href: "archive.html",  label: "아카이브",        key: "archive" },
     { href: "gallery.html",  label: "학술행사 갤러리",  key: "gallery" },
     { href: "links.html",    label: "링크 모아보기",    key: "links" }
   ];

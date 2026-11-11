@@ -10,7 +10,7 @@ about.html      학회 소개
 activities.html 학술 활동
 join.html       가입 안내
 bylaws.html     회칙
-archive.html    대표 공개 자료 아카이빙
+archive.html    아카이브
 gallery.html    학술행사 갤러리
 links.html      링크 모아보기
 kisap.css       전체 스타일 (색, 글로우, 반응형)
