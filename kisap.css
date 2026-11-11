@@ -467,3 +467,8 @@ div.row{cursor:default}
 .hero-bar .next-ev:hover .kr{color:#fff}
 .hero-bar .next-ev .mono{color:var(--ink-2)}
 .sub .rows{border-top:0}
+.side-sticky{position:sticky;top:120px}
+.programs.two{grid-template-columns:1fr 1fr}
+.toc a{height:auto;min-height:40px;padding:8px 0;line-height:1.4}
+@media (max-width:1100px){.side-sticky{position:static}}
+@media (max-width:900px){.programs.two{grid-template-columns:1fr}.side .toc{margin-top:36px}}

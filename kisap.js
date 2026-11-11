@@ -196,6 +196,6 @@
         }
       });
     }, { rootMargin: "-30% 0px -60% 0px" });
-    document.querySelectorAll(".chapter[id]").forEach(function (c) { io.observe(c); });
+    document.querySelectorAll(".chapter[id], .sub[id]").forEach(function (c) { io.observe(c); });
   }
 })();
