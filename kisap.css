@@ -459,3 +459,4 @@ div.row{cursor:default}
   .timeline .y,.timeline .t{margin-top:0}
 }
 .timeline .t,.art .t{border-top:0;padding-top:0}
+.site-footer a{text-transform:none;letter-spacing:.04em;transition:color .2s}.site-footer a:hover{color:var(--ink)}

@@ -83,7 +83,7 @@
   if (footer) {
     footer.innerHTML =
       '<span class="mono">© 2026 KISAP · <span class="kr">한국분석철학대학생연합학회</span></span>' +
-      '<span class="mono">Korean Intercollegiate Society for Analytic Philosophy</span>';
+      '<span class="mono"><a href="https://www.instagram.com/kisap.philosophy" target="_blank" rel="noopener">Instagram ↗</a> &nbsp;·&nbsp; <a href="mailto:kisap.philosophy@gmail.com">kisap.philosophy@gmail.com</a></span>';
   }
 
   /* ---------- glow text: <span class="glow">Text</span> ---------- */
