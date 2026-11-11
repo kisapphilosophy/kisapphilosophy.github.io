@@ -12,10 +12,9 @@ bylaws.html     회칙
 archive.html    대표 공개 자료 아카이빙
 gallery.html    학술행사 갤러리
 links.html      링크 모아보기
-assets/
-  kisap.css     전체 스타일 (색, 글로우, 반응형)
-  kisap.js      메뉴·푸터·글로우 글자·사다리·필터 자동 생성
-  fonts/PretendardVariable.woff2   한글 서체 (OFL)
+kisap.css       전체 스타일 (색, 글로우, 반응형)
+kisap.js        메뉴·푸터·글로우 글자·사다리·필터 자동 생성
+PretendardVariable.woff2   한글 서체 (OFL, Pretendard-OFL.txt)
 ```
 
 영문 서체 Inter와 IBM Plex Mono는 Google Fonts에서 불러옵니다.
@@ -24,7 +23,7 @@ assets/
 
 | 바꿀 것 | 위치 |
 |---|---|
-| 메뉴 이름·순서, 연락 이메일 | `assets/kisap.js` 맨 위 `NAV`, `JOIN`, `EMAIL` |
+| 메뉴 이름·순서, 연락 이메일 | `kisap.js` 맨 위 `NAV`, `JOIN`, `EMAIL` |
 | 메인 문구, 창립 연도, 다음 행사 | `index.html` |
 | 구글폼 링크 | `join.html`의 `Apply via Google Form` 버튼 `href="#"` |
 | 자료 링크 | `archive.html` 각 줄의 `href="#"` |
