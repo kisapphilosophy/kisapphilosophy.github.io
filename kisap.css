@@ -460,3 +460,10 @@ div.row{cursor:default}
 }
 .timeline .t,.art .t{border-top:0;padding-top:0}
 .site-footer a{text-transform:none;letter-spacing:.04em;transition:color .2s}.site-footer a:hover{color:var(--ink)}
+/* next event on the hero */
+.hero-bar .next-ev{display:block;transition:color .2s}
+.hero-bar .next-ev .kr{display:inline-flex;align-items:center;gap:10px}
+.hero-bar .next-ev .dot{width:8px;height:8px;--c:var(--coral);animation:kisap-pulse 2.8s ease-in-out infinite}
+.hero-bar .next-ev:hover .kr{color:#fff}
+.hero-bar .next-ev .mono{color:var(--ink-2)}
+.sub .rows{border-top:0}
