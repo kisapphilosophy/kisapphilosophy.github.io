@@ -472,3 +472,6 @@ div.row{cursor:default}
 .toc a{height:auto;min-height:40px;padding:8px 0;line-height:1.4}
 @media (max-width:1100px){.side-sticky{position:static}}
 @media (max-width:900px){.programs.two{grid-template-columns:1fr}.side .toc{margin-top:36px}}
+.title-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.m-only{display:none!important}
+@media (max-width:900px){.m-only{display:inline-flex!important}.d-only{display:none!important}}
