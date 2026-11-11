@@ -392,7 +392,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .crit{list-style:none;counter-reset:c;border-top:1px solid var(--line);max-width:860px}
 .crit li{display:grid;grid-template-columns:52px 1fr;padding:16px 0;border-bottom:1px solid var(--line);font-family:var(--kr);font-size:16px;line-height:1.6;color:var(--ink-2)}
 .crit li::before{counter-increment:c;content:counter(c,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--mute);padding-top:3px}
-.org{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.org{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .person{border:1px solid var(--line);padding:22px 20px 24px;font-family:var(--kr);transition:border-color .3s}
 .person:hover{border-color:#34313a}
 .person .role{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mute)}
