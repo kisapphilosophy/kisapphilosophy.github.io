@@ -86,15 +86,15 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* signal-dot CTA (가입 안내) */
 .cta-dot{display:inline-flex;align-items:center;gap:12px;font-size:15px;color:var(--ink);white-space:nowrap}
-.cta-dot .dot{width:9px;height:9px;--c:var(--pink);animation:kisap-pulse 2.8s ease-in-out infinite}
+.cta-dot .dot{width:9px;height:9px;--c:var(--coral);animation:kisap-pulse 2.8s ease-in-out infinite}
 .cta-dot .arr{color:var(--mute);transition:color .25s, transform .25s}
 .cta-dot:hover .arr,.cta-dot:focus-visible .arr{color:var(--ink);transform:translateX(3px)}
 .cta-dot:hover .dot{animation-duration:1.2s}
 .cta-dot.lg{font-size:17px;gap:14px}
 .cta-dot.lg .dot{width:11px;height:11px}
 @keyframes kisap-pulse{
-  0%,100%{box-shadow:0 0 6px 1px var(--pink),0 0 16px 4px rgba(245,154,192,.45)}
-  50%{box-shadow:0 0 9px 2px var(--pink),0 0 30px 10px rgba(245,154,192,.6)}
+  0%,100%{box-shadow:0 0 6px 1px var(--coral),0 0 16px 4px rgba(244,124,140,.45)}
+  50%{box-shadow:0 0 9px 2px var(--coral),0 0 30px 10px rgba(244,124,140,.6)}
 }
 
 /* ---------------- glow text ---------------- */
