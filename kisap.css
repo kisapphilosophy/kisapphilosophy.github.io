@@ -120,11 +120,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* ---------------- ladder ---------------- */
 .ladder{position:absolute;pointer-events:none;will-change:transform}
 .ladder svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.ladder .l-wide{filter:blur(calc(36px * var(--ls,1))) url(#boost2) url(#spray);opacity:.3}
-.ladder .l-mid {filter:blur(calc(20px * var(--ls,1))) url(#boost) url(#spray);opacity:.6}
+.ladder .l-wide{filter:blur(calc(40px * var(--ls,1))) url(#boost2) url(#spray);opacity:.4}
+.ladder .l-mid {filter:blur(calc(18px * var(--ls,1))) url(#boost) url(#spray);opacity:.75}
 .ladder .l-br2 {filter:blur(calc(30px * var(--ls,1)));opacity:.45}
 .ladder .l-br1 {filter:blur(calc(17px * var(--ls,1))) url(#boost);opacity:.5}
-.ladder .l-body{filter:blur(calc(11px * var(--ls,1)));opacity:.85}
+.ladder .l-body{filter:blur(calc(6px * var(--ls,1)));opacity:.95}
 
 /* ---------------- hero (index) ---------------- */
 /* home: hero + statement share one continuous ladder that fades out into the 2nd screen */

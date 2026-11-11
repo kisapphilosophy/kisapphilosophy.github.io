@@ -106,25 +106,46 @@
     if (!el.querySelector(".s")) el.innerHTML = '<div class="s"></div><div class="d"></div>';
   });
 
-  /* ---------- the ladder ---------- */
-  var STOPS = '<stop offset="0" stop-color="#8EA4EC"/><stop offset=".3" stop-color="#B9A7F2"/><stop offset=".65" stop-color="#F59AC0"/><stop offset="1" stop-color="#FFB49A"/>';
-  var T = { rail: 21, rung: 22, gap: 116, inset: 14 }; // viewBox units; width = 228
+  /* ---------- the ladder: lilac-pink gradient with neon patches ---------- */
+  var T = { rail: 21, rung: 22, gap: 116, inset: 14 };
+  var NEON = ["#FFF23A","#FF3D9A","#FF3B4E","#3D6BFF","#FFE81F","#FF9A1F","#B84DFF","#3DE6FF"];
+  var MODE = window.LADDER_MODE || "grad"; // "base" = pale body + neon patches, "full" = all neon patches
+  function rng(seed){ return function(){ seed=(seed*16807)%2147483647; return (seed-1)/2147483646; }; }
+  function blobs(H){
+    var r=rng(7), out="", step = MODE==="full" ? 70 : 95;
+    for (var y=-40; y<H+80; y+=step*(0.7+r()*0.6)){
+      var n = MODE==="full" ? 2 : (r()<.75?1:2);
+      for (var i=0;i<n;i++){
+        var c=NEON[Math.floor(r()*NEON.length)];
+        var cx=Math.round(r()*228), cy=Math.round(y+r()*60-30), rad=Math.round((MODE==="full"?55:38)+r()*55);
+        if (c==="#3DE6FF" && cx<160) cx = Math.max(228-cx, 175); // keep cyan on the right rail
+        out+='<circle cx="'+cx+'" cy="'+cy+'" r="'+rad+'" fill="'+c+'" opacity="'+(MODE==="full"?0.95:(0.75+r()*0.25)).toFixed(2)+'"/>';
+      }
+    }
+    return out;
+  }
+  var BLOBS = null;
   function ladderSVG(cls, uid, H) {
-    var r = "";
+    var shape='<rect x="'+T.inset+'" y="0" width="'+T.rail+'" height="'+H+'" rx="'+T.rail/2+'"/>' +
+      '<rect x="'+(228-T.rail-T.inset)+'" y="0" width="'+T.rail+'" height="'+H+'" rx="'+T.rail/2+'"/>';
     for (var y = 40; y < H - 20; y += T.gap)
-      r += '<rect x="' + (T.inset + 6) + '" y="' + y + '" width="' + (216 - 2 * T.inset) + '" height="' + T.rung + '" rx="' + T.rung / 2 + '"/>';
-    return '<svg class="' + cls + '" viewBox="0 0 228 ' + H + '" preserveAspectRatio="none" aria-hidden="true">' +
-      '<defs><linearGradient id="' + uid + '" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="228" y2="0">' + STOPS + "</linearGradient></defs>" +
-      '<g fill="url(#' + uid + ')">' +
-      '<rect x="' + T.inset + '" y="0" width="' + T.rail + '" height="' + H + '" rx="' + T.rail / 2 + '"/>' +
-      '<rect x="' + (228 - T.rail - T.inset) + '" y="0" width="' + T.rail + '" height="' + H + '" rx="' + T.rail / 2 + '"/>' +
-      r + "</g></svg>";
+      shape += '<rect x="'+(T.inset+6)+'" y="'+y+'" width="'+(216-2*T.inset)+'" height="'+T.rung+'" rx="'+T.rung/2+'"/>';
+    var base = MODE==="full" ? '<rect width="228" height="'+H+'" fill="#7F8CFF"/>'
+      : MODE==="grad" ? '<rect width="228" height="'+H+'" fill="url(#'+uid+'g)"/>'
+      : '<rect width="228" height="'+H+'" fill="#C9CEFF"/>';
+    return '<svg class="'+cls+'" viewBox="0 0 228 '+H+'" preserveAspectRatio="none" aria-hidden="true"><defs>' +
+      '<mask id="'+uid+'m" maskUnits="userSpaceOnUse" x="-50" y="-50" width="328" height="'+(H+100)+'"><g fill="#fff">'+shape+'</g></mask>' +
+      '<linearGradient id="'+uid+'g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="228" y2="0"><stop offset="0" stop-color="#8EA4EC"/><stop offset=".3" stop-color="#B9A7F2"/><stop offset=".65" stop-color="#F59AC0"/><stop offset="1" stop-color="#FFB49A"/></linearGradient>' +
+      '<filter id="'+uid+'f" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="'+(MODE==="full"?10:14)+'"/></filter>' +
+      '</defs>' +
+      '<g mask="url(#'+uid+'m)">'+base+'<g filter="url(#'+uid+'f)">'+BLOBS+'</g></g></svg>';
   }
   function drawLadders() {
     document.querySelectorAll(".ladder").forEach(function (el, k) {
       var w = el.offsetWidth, h = el.offsetHeight;
       if (!w || !h) return;
       var H = Math.round(228 * h / w);
+      BLOBS = blobs(H);
       el.style.setProperty("--ls", (w / 290).toFixed(3));
       el.innerHTML = ["l-wide", "l-mid", "l-br2", "l-br1", "l-body"].map(function (c, i) {
         return ladderSVG(c, "lg" + k + "_" + i, H);
