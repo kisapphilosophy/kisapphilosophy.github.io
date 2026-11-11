@@ -5,6 +5,7 @@
   /* ---------- site config (edit here) ---------- */
   var NAV = [
     { href: "about.html",    label: "학회 소개",       key: "about" },
+    { href: "activities.html", label: "학술 활동",     key: "activities" },
     { href: "bylaws.html",   label: "회칙",            key: "bylaws" },
     { href: "archive.html",  label: "자료 아카이빙",    key: "archive" },
     { href: "gallery.html",  label: "학술행사 갤러리",  key: "gallery" },
@@ -55,7 +56,7 @@
     header.innerHTML =
       '<a class="logo" href="index.html" aria-label="KISAP 홈">' + MARK + "<span>KISAP</span></a>" +
       '<nav class="nav-links" aria-label="주 메뉴">' + links + "</nav>" +
-      '<a class="btn kr" href="' + JOIN.href + '"' + (page === "join" ? ' aria-current="page"' : "") + '><span class="bloom"></span>' + JOIN.label + "</a>" +
+      '<a class="cta-dot kr" href="' + JOIN.href + '"' + (page === "join" ? ' aria-current="page"' : "") + '><span class="dot"></span>' + JOIN.label + '<span class="arr" aria-hidden="true">→</span></a>' +
       '<button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>';
 
     var colors = ["--peach", "--pink", "--lilac", "--cyan", "--mint", "--butter"];

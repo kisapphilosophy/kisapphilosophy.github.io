@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>학술 활동 — KISAP</title>
+<meta name="description" content="한국분석철학대학생연합학회 KISAP — Korean Intercollegiate Society for Analytic Philosophy">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cg transform='rotate(-17 32 32)' fill='%23F3D9FF'%3E%3Crect x='20' y='6' width='5' height='52' rx='2.5'/%3E%3Crect x='39' y='6' width='5' height='52' rx='2.5'/%3E%3Crect x='21' y='14' width='22' height='4' rx='2'/%3E%3Crect x='21' y='24' width='22' height='4' rx='2'/%3E%3Crect x='21' y='34' width='22' height='4' rx='2'/%3E%3Crect x='21' y='44' width='22' height='4' rx='2'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&amp;family=Inter:opsz,wght@14..32,300..500&amp;family=Lora:ital,wght@1,400&amp;display=swap">
+<link rel="stylesheet" href="kisap.css">
+</head>
+<body data-page="activities">
+<header class="site-header"></header>
+<main>
+<section class="page">
+  <div class="eyebrow">02 — <span class="kr">학술 활동</span></div>
+      <h1 class="h-sec"><span class="glow soft">Activities</span></h1>
+  <div class="section-label"><div class="mono">Regular Programs</div></div>
+  <div class="programs">
+    <article class="prog"><span class="dot" style="--c:var(--peach)"></span><h3>Reading Group</h3><div class="mono cad">Weekly · Online & Seoul</div><p>Close reading of classic and contemporary texts in analytic philosophy.</p></article><article class="prog"><span class="dot" style="--c:var(--pink)"></span><h3>Colloquium</h3><div class="mono cad">Each semester</div><p>Student papers presented with invited faculty commentators.</p></article><article class="prog"><span class="dot" style="--c:var(--lilac)"></span><h3>Joint Seminar</h3><div class="mono cad">Monthly</div><p>Cross-university seminars built around a shared theme.</p></article><article class="prog"><span class="dot" style="--c:var(--cyan)"></span><h3>Essay Contest</h3><div class="mono cad">Yearly</div><p>An open essay prize for undergraduate and graduate students.</p></article>
+  </div>
+  <div class="section-label">
+    <div class="mono">Upcoming</div>
+    <div class="chips" data-filter-group="#act-rows" role="group" aria-label="활동 종류">
+      <button class="chip on" data-filter="all" aria-pressed="true">All</button><button class="chip" data-filter="reading" aria-pressed="false">Reading Group</button><button class="chip" data-filter="colloquium" aria-pressed="false">Colloquium</button><button class="chip" data-filter="seminar" aria-pressed="false">Seminar</button><button class="chip" data-filter="contest" aria-pressed="false">Contest</button>
+    </div>
+  </div>
+  <div class="rows tight" id="act-rows">
+    <!-- TODO: replace href="#" with the event's sign-up or detail link -->
+    <a class="row act" href="#" data-tag="reading"><span class="hov"></span><span class="dot" style="--c:var(--peach)"></span><span class="dt">2026.11.20</span><span class="ty">Reading Group</span><span>Kripke, Naming and Necessity — Lecture III</span><span class="pl">Online</span></a><a class="row act" href="#" data-tag="seminar"><span class="hov"></span><span class="dot" style="--c:var(--lilac)"></span><span class="dt">2026.12.04</span><span class="ty">Joint Seminar</span><span>Metaethics after Moore</span><span class="pl">Seoul</span></a><a class="row act" href="#" data-tag="colloquium"><span class="hov"></span><span class="dot" style="--c:var(--pink)"></span><span class="dt">2027.01.15</span><span class="ty">Colloquium</span><span>Winter Colloquium 2027</span><span class="pl">Seoul</span></a><a class="row act" href="#" data-tag="contest"><span class="hov"></span><span class="dot" style="--c:var(--cyan)"></span><span class="dt">2027.02.28</span><span class="ty">Essay Contest</span><span>Submission deadline</span><span class="pl">—</span></a><a class="row act" href="#" data-tag="reading"><span class="hov"></span><span class="dot" style="--c:var(--peach)"></span><span class="dt">2027.03.06</span><span class="ty">Reading Group</span><span>Spring term kick-off</span><span class="pl">Seoul</span></a>
+  </div>
+</section>
+</main>
+<footer class="site-footer"></footer>
+<script src="kisap.js"></script>
+</body>
+</html>

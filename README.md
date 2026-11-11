@@ -7,6 +7,7 @@
 ```
 index.html      메인 (사다리 히어로)
 about.html      학회 소개
+activities.html 학술 활동
 join.html       가입 안내
 bylaws.html     회칙
 archive.html    대표 공개 자료 아카이빙
