@@ -127,8 +127,15 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .ladder .l-body{filter:blur(calc(11px * var(--ls,1)));opacity:.85}
 
 /* ---------------- hero (index) ---------------- */
-.hero{position:relative;height:100vh;height:100svh;min-height:720px;overflow:hidden}
-.hero .ladder{left:62.2%;top:-32%;width:clamp(150px,18.1vw,330px);height:164%;transform:rotate(16deg)}
+/* home: hero + statement share one continuous ladder that fades out into the 2nd screen */
+.home{position:relative;overflow:hidden;isolation:isolate;--hh:max(100vh,720px)}
+@supports (height:100svh){.home{--hh:max(100svh,720px)}}
+.ladder-layer{position:absolute;left:0;right:0;top:0;height:calc(var(--hh) * 1.6);z-index:3;pointer-events:none;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 calc(var(--hh) * .9),transparent calc(var(--hh) * 1.36));
+          mask-image:linear-gradient(to bottom,#000 0,#000 calc(var(--hh) * .9),transparent calc(var(--hh) * 1.36))}
+.ladder-layer .ladder{left:62.2%;top:calc(var(--hh) * -.32);width:clamp(150px,18.1vw,330px);height:calc(var(--hh) * 2);
+  transform-origin:50% calc(var(--hh) * .82);transform:rotate(16deg)}
+.hero{position:relative;height:var(--hh)}
 .hero-copy{position:absolute;left:var(--pad);top:22%;z-index:2;max-width:62%}
 .hero-copy .mono{margin-bottom:30px}
 .hero-line1{text-wrap:balance;font-size:clamp(26px,3.75vw,64px);line-height:1.05;font-weight:300;letter-spacing:-.03em;color:#ece8e2}
@@ -259,7 +266,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ---------------- responsive ---------------- */
 @media (max-width:1280px){
-  .hero .ladder{left:66%}
+  .ladder-layer .ladder{left:66%}
   .hero-copy{max-width:64%}
 }
 @media (max-width:1100px){
@@ -272,8 +279,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   :root{--pad:24px;--header-h:68px}
   .nav-links,.site-header > .cta-dot{display:none}
   .menu-btn{display:block}
-  .hero{min-height:640px}
-  .hero .ladder{left:58%;width:44vw;top:-30%;height:160%;opacity:.55}
+  .ladder-layer{z-index:0}
+  .ladder-layer .ladder{left:58%;width:44vw;opacity:.55}
   .hero-copy{top:19%;max-width:none;right:var(--pad)}
   .hero-big{font-size:clamp(56px,17vw,120px)}
   .hero-line1{font-size:clamp(24px,7vw,44px)}
