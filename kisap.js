@@ -12,7 +12,6 @@
     { href: "links.html",    label: "링크 모아보기",    key: "links" }
   ];
   var JOIN = { href: "join.html", label: "가입 안내", key: "join" };
-  var EMAIL = "kisap@sample.mail";
 
   var page = document.body.getAttribute("data-page") || "";
 
@@ -83,8 +82,8 @@
   var footer = document.querySelector(".site-footer");
   if (footer) {
     footer.innerHTML =
-      '<span class="mono">© KISAP · <span class="kr">한국분석철학대학생연합학회</span></span>' +
-      '<span class="mono">' + EMAIL + "</span>";
+      '<span class="mono">© 2026 KISAP · <span class="kr">한국분석철학대학생연합학회</span></span>' +
+      '<span class="mono">Korean Intercollegiate Society for Analytic Philosophy</span>';
   }
 
   /* ---------- glow text: <span class="glow">Text</span> ---------- */

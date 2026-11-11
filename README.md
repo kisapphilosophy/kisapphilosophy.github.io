@@ -16,6 +16,7 @@ links.html      링크 모아보기
 kisap.css       전체 스타일 (색, 글로우, 반응형)
 kisap.js        메뉴·푸터·글로우 글자·사다리·필터 자동 생성
 PretendardVariable.woff2   한글 서체 (OFL, Pretendard-OFL.txt)
+images/         갤러리 사진 (참석자 얼굴 모자이크본)
 ```
 
 영문 서체 Inter와 IBM Plex Mono는 Google Fonts에서 불러옵니다.

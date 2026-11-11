@@ -10,50 +10,34 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&amp;family=Inter:opsz,wght@14..32,300..500&amp;family=Lora:ital,wght@1,400&amp;display=swap">
-<link rel="stylesheet" href="kisap.css?v=202611111409">
+<link rel="stylesheet" href="kisap.css?v=202611111733">
 </head>
 <body data-page="gallery">
 <header class="site-header"></header>
 <main>
 <section class="page">
-  <div class="head-row">
-    <div><div class="eyebrow">05 — <span class="kr">학술행사 갤러리</span></div>
-      <h1 class="h-sec"><span class="glow soft">Gallery</span></h1></div>
-    <div class="chips" data-filter-group="#gallery-grid" role="group" aria-label="연도">
-      <button class="chip on" data-filter="all" aria-pressed="true">All</button><button class="chip" data-filter="spring" aria-pressed="false">Spring</button><button class="chip" data-filter="summer" aria-pressed="false">Summer</button><button class="chip" data-filter="fall" aria-pressed="false">Fall</button>
-    </div>
+  <div class="eyebrow">05 — <span class="kr">학술행사 갤러리</span></div>
+      <h1 class="h-sec"><span class="glow soft">Gallery</span></h1>
+  <div class="event-head">
+    <h2>제1차 공개 학술 발표회 「음모론의 철학」</h2>
+    <span class="meta">2026.09.18 (금) · 중앙대학교 203관 509호</span>
   </div>
-  <div class="gallery" id="gallery-grid">
-    <figure class="tile big" data-tag="spring">
-      <!-- To use a photo: <img src="images/your-photo.jpg" alt="Founding Meeting"> and remove the .aura div -->
-      <div class="aura" style="--blur:44px;background:radial-gradient(circle closest-side at 40% 50%,#FFD2C2 0%,#F59AC0 30%,#B9A7F2 60%,transparent 92%)"></div>
-      <span class="no mono">01</span>
-      <figcaption class="cap"><span>Founding Meeting</span><span class="mono">Spring 2026 · Seoul</span></figcaption>
-    </figure><figure class="tile" data-tag="spring">
-      <!-- To use a photo: <img src="images/your-photo.jpg" alt="Reading Group"> and remove the .aura div -->
-      <div class="aura" style="--blur:28px;background:radial-gradient(circle closest-side,#D9F6FF 0%,#86D8F2 35%,#8EA4EC 65%,transparent 92%)"></div>
-      <span class="no mono">02</span>
-      <figcaption class="cap"><span>Reading Group</span><span class="mono">Spring 2026</span></figcaption>
-    </figure><figure class="tile" data-tag="summer">
-      <!-- To use a photo: <img src="images/your-photo.jpg" alt="Joint Seminar"> and remove the .aura div -->
-      <div class="aura" style="--blur:28px;background:radial-gradient(circle closest-side,#FFF6C9 0%,#FFE58C 30%,#CBF27E 60%,transparent 92%)"></div>
-      <span class="no mono">03</span>
-      <figcaption class="cap"><span>Joint Seminar</span><span class="mono">Summer 2026</span></figcaption>
-    </figure><figure class="tile" data-tag="fall">
-      <!-- To use a photo: <img src="images/your-photo.jpg" alt="Essay Contest"> and remove the .aura div -->
-      <div class="aura" style="--blur:28px;background:radial-gradient(circle closest-side,#FFC9D4 0%,#F47C8C 35%,#FF9F62 62%,transparent 92%)"></div>
-      <span class="no mono">04</span>
-      <figcaption class="cap"><span>Essay Contest</span><span class="mono">Fall 2026</span></figcaption>
-    </figure><figure class="tile" data-tag="summer">
-      <!-- To use a photo: <img src="images/your-photo.jpg" alt="Summer School"> and remove the .aura div -->
-      <div class="aura" style="--blur:28px;background:radial-gradient(circle closest-side,#E7E0FF 0%,#B9A7F2 35%,#94EFC2 65%,transparent 92%)"></div>
-      <span class="no mono">05</span>
-      <figcaption class="cap"><span>Summer School</span><span class="mono">Summer 2026</span></figcaption>
-    </figure>
+  <div class="gallery ev">
+    <figure class="tile big ph"><img src="images/event1-hall.jpg" alt="제1차 행사 중 강의실 전경" loading="lazy"><figcaption class="cap"><span>행사 중 강의실 전경</span><span class="mono">01</span></figcaption></figure>
+    <figure class="tile tall ph"><img src="images/event1-poster.jpg" alt="「음모론의 철학」 홍보 포스터" loading="lazy" style="object-position:top"><figcaption class="cap"><span>홍보 포스터</span><span class="mono">02</span></figcaption></figure>
+    <figure class="tile ph"><img src="images/event1-talk.jpg" alt="2부 「베이즈주의에서의 사전확률 문제」 발표" loading="lazy"><figcaption class="cap"><span>2부 발표</span><span class="mono">03</span></figcaption></figure>
+    <figure class="tile soon"><div class="aura" style="--blur:28px;background:radial-gradient(circle closest-side,#E7E0FF 0%,#B9A7F2 35%,#86D8F2 65%,transparent 92%)"></div><figcaption class="cap kr"><span>다음 행사 사진이 곧 올라와요</span></figcaption></figure>
   </div>
+  <div class="event-sum">
+    <div><div class="mono">Attendees</div><div class="num">42</div><div class="lbl">신청 59명 중 참석</div></div>
+    <div><div class="mono">Institutions</div><div class="num">22</div><div class="lbl">신청자 소속 기관</div></div>
+    <div><div class="mono">New Members</div><div class="num">12</div><div class="lbl">현장에서 가입</div></div>
+    <div><div class="mono">Program</div><div class="num" style="font-size:clamp(20px,1.6vw,26px);line-height:1.35;margin-top:12px"><span class="kr">0부 분석철학 입문<br>1부 음모론의 철학<br>2부 베이즈주의</span></div></div>
+  </div>
+  <p class="foot-note">사진 속 참석자 얼굴은 모자이크 처리했습니다.</p>
 </section>
 </main>
 <footer class="site-footer"></footer>
-<script src="kisap.js?v=202611111409"></script>
+<script src="kisap.js?v=202611111733"></script>
 </body>
 </html>
