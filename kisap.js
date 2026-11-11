@@ -8,7 +8,7 @@
     { href: "activities.html", label: "학술 활동",     key: "activities" },
     { href: "bylaws.html",   label: "회칙",            key: "bylaws" },
     { href: "archive.html",  label: "아카이브",        key: "archive" },
-    { href: "gallery.html",  label: "학술행사 갤러리",  key: "gallery" },
+    { href: "gallery.html",  label: "갤러리",          key: "gallery" },
     { href: "links.html",    label: "링크 모아보기",    key: "links" }
   ];
   var JOIN = { href: "join.html", label: "가입 안내", key: "join" };

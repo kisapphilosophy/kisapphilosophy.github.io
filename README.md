@@ -11,7 +11,7 @@ activities.html 학술 활동
 join.html       가입 안내
 bylaws.html     회칙
 archive.html    아카이브
-gallery.html    학술행사 갤러리
+gallery.html    갤러리
 links.html      링크 모아보기
 kisap.css       전체 스타일 (색, 글로우, 반응형)
 kisap.js        메뉴·푸터·글로우 글자·사다리·필터 자동 생성
