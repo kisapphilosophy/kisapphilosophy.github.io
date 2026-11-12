@@ -15,7 +15,7 @@ gallery.html    갤러리
 links.html      링크 모아보기
 kisap.css       전체 스타일 (색, 글로우, 반응형)
 kisap.js        메뉴·푸터·글로우 글자·사다리·필터 자동 생성
-PretendardVariable.woff2   한글 서체 (OFL, Pretendard-OFL.txt)
+fonts/                     글꼴 (한글은 사이트에 쓰인 글자만 남긴 Pretendard 서브셋 "KISAP KR", 라이선스 OFL-*.txt)
 images/         갤러리 사진 (참석자 얼굴 모자이크본)
 ```
 
