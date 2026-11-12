@@ -475,3 +475,4 @@ div.row{cursor:default}
 .title-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .m-only{display:none!important}
 @media (max-width:900px){.m-only{display:inline-flex!important}.d-only{display:none!important}}
+body{word-break:keep-all;overflow-wrap:break-word}
