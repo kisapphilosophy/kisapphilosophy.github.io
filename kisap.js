@@ -5,6 +5,7 @@
   /* ---------- site config (edit here) ---------- */
   var NAV = [
     { href: "about.html",    label: "학회 소개",       key: "about" },
+    { href: "notice.html",   label: "공지",            key: "notice" },
     { href: "activities.html", label: "학술 활동",     key: "activities" },
     { href: "bylaws.html",   label: "회칙",            key: "bylaws" },
     { href: "archive.html",  label: "아카이브",        key: "archive" },
