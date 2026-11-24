@@ -5,7 +5,7 @@
 
 @font-face{
   font-family:"KISAP KR";
-  src:url("fonts/kisap-kr.woff2?v=5ad1e366") format("woff2-variations"),url("fonts/kisap-kr.woff2?v=5ad1e366") format("woff2");
+  src:url("fonts/kisap-kr.woff2?v=68a2739f") format("woff2-variations"),url("fonts/kisap-kr.woff2?v=68a2739f") format("woff2");
   font-weight:45 920;font-style:normal;font-display:swap;
 }
 @font-face{
@@ -456,6 +456,8 @@ div.row{cursor:default}
 .nprog .pt{font-family:var(--mono);font-size:13px;color:var(--mute);padding-top:4px;letter-spacing:.06em}
 .nprog .by{font-size:15px;color:var(--ink-2)}
 .nprog .who{color:var(--mute);margin-left:6px;font-size:14px}
+.nprog .ab{display:block;margin-top:12px;font-size:15px;line-height:1.85;color:var(--mute);max-width:640px}
+.nprog .ab b{color:var(--ink-2);font-weight:500}
 @media (max-width:900px){
   .notice-grid{grid-template-columns:1fr;gap:36px}
   .notice-poster{position:relative;top:auto;max-width:420px;width:100%}
