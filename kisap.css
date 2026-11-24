@@ -444,7 +444,7 @@ div.row{cursor:default}
 .event-sum .lbl{font-family:var(--kr);font-size:13px;color:var(--mute);margin-top:4px}
 /* notice */
 .notice-grid{margin-top:28px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
-.notice-poster{aspect-ratio:3/4;position:sticky;top:calc(var(--header-h,84px) + 24px)}
+.notice-poster{display:block;aspect-ratio:4/5;position:sticky;top:calc(var(--header-h,84px) + 24px);border:1px solid var(--line);overflow:hidden;background:#0a0a0c}
 .notice-poster img,.notice-poster video{width:100%;height:100%;object-fit:cover;display:block}
 .notice-body .cta-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:32px}
 .nkv{border-top:1px solid var(--line)}
